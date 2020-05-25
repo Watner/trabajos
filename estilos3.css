@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+}
+
+body{
+    background: url('im.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+.container{
+    position: absolute;
+    top: 14%;
+    transform: translateY(-50px);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.formulario{
+    display: flex;
+    max-width: 550px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+    width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px;
+    background: transparent;
+    border: 0px;
+    color: #c5ecfd;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    width: 100%;
+}
+.input-fields .input{
+    color: #c5ecfd;
+}
+.msg textarea{
+    height: 170px;
+}
+
+.btn{
+    background: teal;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    margin: 15px 10px;
+
+}
+.btn:hover{
+    background-color: turquoise;
+    color: black;
+}
+
+@media screen and (max-width:600px){
+    .formulario{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 60px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
